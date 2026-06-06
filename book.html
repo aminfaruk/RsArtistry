@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book | RS Artistry, Sydney Makeup Studio</title>
+<meta name="description" content="Book your makeup appointment with RS Artistry in Sydney. Choose your service and a time that suits you through our online scheduler.">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============================ HEADER ============================ -->
+<header class="site-header">
+  <div class="site-header__inner">
+    <a class="brand" href="index.html" aria-label="RS Artistry home"><img class="brand-mark" src="images/rs-logo.png" alt="" width="496" height="424"><span class="brand-word">RS Artistry</span></a>
+    <nav class="nav" id="primary-nav" aria-label="Primary">
+      <a class="nav-link" href="index.html">Home</a>
+      <a class="nav-link" href="about.html">About</a>
+      <a class="nav-link" href="services.html">Services</a>
+      <a class="nav-link" href="gallery.html">Gallery</a>
+      <a class="nav-link" href="lashes.html">Lashes</a>
+      <a class="nav-link" href="contact.html">Contact</a>
+    </nav>
+    <div class="nav__actions">
+      <a class="btn nav-book is-active" href="book.html" aria-current="page">Book</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="primary-nav">
+        <span class="nav-toggle__bar"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="page-hero">
+    <div class="container text-center reveal">
+      <p class="eyebrow mb-3">Reserve your date</p>
+      <h1 class="display mb-3">Secure your session.</h1>
+      <p class="lead maxw-md mx-auto">Choose your service and a time that suits you. Booking is handled through our online scheduler below. If you have a question first, please <a class="link-line" style="border:0; padding:0" href="contact.html">get in touch</a>.</p>
+    </div>
+  </header>
+
+  <!-- ===================== ACUITY SCHEDULER ===================== -->
+  <section class="section--tight">
+    <div class="container">
+
+      <!--
+        ===========================================================
+        ACUITY SCHEDULER EMBED
+        -----------------------------------------------------------
+        Paste the Acuity inline embed snippet INSIDE the
+        #acuity-embed container below, then delete the
+        .booking-embed__placeholder block.
+
+        Typical Acuity inline embed:
+
+        <iframe src="https://app.acuityscheduling.com/schedule.php?owner=XXXXXXXX"
+                title="Schedule Appointment" width="100%" height="800"
+                frameBorder="0"></iframe>
+        <script src="https://embed.acuityscheduling.com/js/embed.js" type="text/javascript"></script>
+
+        The .booking-embed container is unstyled on the inside
+        (no padding/border on the iframe) so the scheduler drops
+        in flush with no restyling required.
+        ===========================================================
+      -->
+      <div class="booking-embed reveal" id="acuity-embed">
+        <!-- booking-embed__placeholder: remove once the Acuity embed is added -->
+        <div class="booking-embed__placeholder text-center">
+          <p class="booking-embed__mark">Online scheduler</p>
+          <h2 class="headline mb-3">Booking calendar loads here</h2>
+          <p class="lead muted maxw-sm mx-auto mb-5">Our Acuity scheduler is being connected. In the meantime, send an enquiry and we will confirm your appointment by email.</p>
+          <a class="btn btn--solid" href="contact.html">Send a booking enquiry</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===================== WHAT TO EXPECT ===================== -->
+  <section class="section section--paper">
+    <div class="container">
+      <div class="text-center mb-6 reveal">
+        <p class="eyebrow mb-2">Before your appointment</p>
+        <h2 class="headline">What to expect</h2>
+      </div>
+      <div class="grid12">
+        <div class="col-4 reveal stack-sm">
+          <p class="subhead">01 / Choose</p>
+          <p class="muted">Select your service, from bridal and events to soft glam, and a time that works for you.</p>
+        </div>
+        <div class="col-4 reveal stack-sm">
+          <p class="subhead">02 / Consult</p>
+          <p class="muted">We confirm the details and discuss your vision, so the session is calm and unhurried.</p>
+        </div>
+        <div class="col-4 reveal stack-sm">
+          <p class="subhead">03 / Create</p>
+          <p class="muted">Arrive at the studio in Bankstown and let Silvia do the rest.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============================ FOOTER ============================ -->
+<footer class="site-footer">
+  <div class="container grid12">
+    <div class="col-4">
+      <div class="footer-brand">RS Artistry</div>
+      <p class="footer-meta maxw-xs">Sydney makeup artistry studio. Editorial bridal, events and soft glam, created in a calm, gallery-like space by Silvia.</p>
+    </div>
+    <div class="col-2 footer-col">
+      <h4>Explore</h4>
+      <ul>
+        <li><a class="footer-link" href="services.html">Services</a></li>
+        <li><a class="footer-link" href="gallery.html">Gallery</a></li>
+        <li><a class="footer-link" href="lashes.html">Lashes</a></li>
+        <li><a class="footer-link" href="about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="col-3 footer-col">
+      <h4>Studio</h4>
+      <ul>
+        <li class="footer-meta">By appointment</li>
+        <li class="footer-meta">Bankstown, Sydney NSW</li>
+        <li class="footer-meta">Wed to Sun, 9am to 5pm</li>
+      </ul>
+    </div>
+    <div class="col-3 footer-col">
+      <h4>Connect</h4>
+      <ul>
+        <li><a class="footer-link" href="https://instagram.com/rsartistry" target="_blank" rel="noopener">Instagram</a></li>
+        <li><a class="footer-link" href="mailto:info@rsartistry.com">info@rsartistry.com</a></li>
+        <li><a class="footer-link" href="contact.html">Contact</a></li>
+        <li><a class="footer-link" href="book.html">Book a session</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; RS Artistry. All rights reserved.</span>
+      <span>Sydney, Australia</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>

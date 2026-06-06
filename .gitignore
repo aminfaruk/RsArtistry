@@ -1,0 +1,15 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Local dev / temporary artifacts
+_*.png
+_eprof_*/
+_edgeprofile_*/
+*.log
+node_modules/
+.vercel/
+
+# Original Stitch design exports (reference only, not part of the site)
+_stitch_export/
+_stitch_portfolio/
