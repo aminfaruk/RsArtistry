@@ -617,6 +617,34 @@ a.footer-link:hover { color: var(--ink); }
 .product-card__buy .shopify-buy-frame,
 .product-card__buy .shopify-buy__product { width: 100%; max-width: 100%; }
 .product-card__buy .shopify-buy__btn-wrapper { margin: 0; }
+/* Shopify's live price — styled to match the old .product-card__price */
+.product-card__buy .shopify-buy__product__price {
+  margin: 0 0 var(--space-3) !important;
+  padding: 0 !important;
+  text-align: left !important;
+}
+.product-card__buy .shopify-buy__product__actual-price {
+  font-family: var(--font-display) !important;
+  font-weight: 400 !important;
+  font-size: 1.5rem !important;
+  line-height: 1 !important;
+  letter-spacing: 0 !important;
+  color: var(--ink) !important;
+}
+/* iframe:false drops Shopify's base reset, so its screen-reader price
+   labels ("Regular price" / "Sale price") become visible. Re-hide them
+   visually while keeping them available to assistive tech. */
+.product-card__buy .visuallyhidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0 0 0 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
 .product-card__buy .shopify-buy__btn {
   display: inline-flex !important;
   align-items: center !important;
