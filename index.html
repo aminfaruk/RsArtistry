@@ -40,33 +40,28 @@
   <!-- ============================ HERO ============================ -->
   <section class="hero">
     <div class="hero__media">
-      <img src="images/hero-home.jpg" style="object-position: center 28%;"
-           alt="Silvia of RS Artistry holding an RS Artistry sign in soft neutral tones" fetchpriority="high">
+      <div class="hero__slides" id="hero-slides" aria-label="Featured looks slideshow" role="group">
+        <img class="hero__slide is-active" src="images/hero-slide-1.jpg" style="object-position: center 18%;"
+             alt="Warm sculpted glam with a soft smoky eye and glossy nude lip" fetchpriority="high">
+        <img class="hero__slide" src="images/hero-slide-2.jpg" style="object-position: center 22%;"
+             alt="Luminous soft glam with sun-kissed blush and a glossy lip" loading="lazy" decoding="async">
+        <img class="hero__slide" src="images/hero-slide-3.jpg" style="object-position: center 20%;"
+             alt="Shimmering bronzed glam with a soft pink flush and natural curls" loading="lazy" decoding="async">
+        <img class="hero__slide" src="images/hero-slide-4.jpg" style="object-position: center 16%;"
+             alt="Editorial glam with a sculpted blush and a bold defined eye" loading="lazy" decoding="async">
+      </div>
     </div>
     <div class="hero__inner">
-      <p class="eyebrow hero__eyebrow">Sydney Makeup Artistry</p>
-      <h1 class="hero__title">RS Artistry</h1>
+      <p class="eyebrow hero__eyebrow">Sydney Makeup Artist</p>
+      <h1 class="hero__title hero__title--logo"><img src="images/rs-wordmark-light.png" alt="RS Artistry" width="1212" height="1052"></h1>
       <p class="hero__tagline">Intentional Beauty. Timeless Elevation.</p>
       <a class="btn btn--on-dark" href="book.html">Book an appointment</a>
     </div>
-  </section>
-
-  <!-- ===================== MEET THE ARTISTS ===================== -->
-  <section class="section">
-    <div class="container grid12 reveal" style="align-items:center">
-      <div class="col-4 start-2 stack">
-        <p class="eyebrow">Meet the artist</p>
-        <h2 class="headline">Silvia</h2>
-        <p class="lead">With over a decade of experience across editorial and bridal makeup, Silvia has cultivated an aesthetic defined by tonal depth and architectural space.</p>
-        <p class="body-lg muted">Her philosophy sets aside the heavy masks of traditional luxury in favour of a quiet gallery, where each client's own artistry remains the focal point.</p>
-        <a class="link-line" href="about.html">Our philosophy <span class="arrow">&rarr;</span></a>
-      </div>
-      <div class="col-5 start-7">
-        <div class="frame ratio-4x5">
-          <img src="images/placeholder-portrait-4x5.svg" data-img="team/silvia.jpg" loading="lazy" decoding="async"
-               alt="Silvia in her bright, minimal Sydney studio">
-        </div>
-      </div>
+    <div class="hero__dots" id="hero-dots" role="tablist" aria-label="Choose a featured look">
+      <button class="hero__dot is-active" type="button" role="tab" aria-selected="true" aria-label="Look 1"></button>
+      <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Look 2"></button>
+      <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Look 3"></button>
+      <button class="hero__dot" type="button" role="tab" aria-selected="false" aria-label="Look 4"></button>
     </div>
   </section>
 
@@ -157,7 +152,6 @@
             <img class="product-card__media-primary" src="images/products/rs01-1.jpg" loading="lazy" decoding="async"
                  alt="RS01 luxury false lashes, full and wispy">
             <img class="product-card__media-hover" src="images/products/rs01-2.png" loading="lazy" decoding="async" alt="" aria-hidden="true">
-            <span class="product-card__badge">Shop launching soon</span>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__name">RS01</h3>
@@ -166,7 +160,72 @@
               <span class="product-card__price" data-price>$15.00</span>
               <span class="product-card__note">AUD</span>
             </div>
-            <button class="btn btn--block is-disabled" type="button" aria-disabled="true" data-buy-button>Shop launching soon</button>
+            <!-- Shopify Buy Button: RS01 -->
+            <div class="product-card__buy">
+              <div id='product-component-1782608357635-h'></div>
+              <script type="text/javascript">
+              /*<![CDATA[*/
+              (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                  if (window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); }
+                } else { loadScript(); }
+                function loadScript() {
+                  var script = document.createElement('script');
+                  script.async = true;
+                  script.src = scriptURL;
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                  script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                  var client = ShopifyBuy.buildClient({
+                    domain: 'gfcib0-3p.myshopify.com',
+                    storefrontAccessToken: '2daaccd4cece3b8cc4d909af717c4bfa',
+                  });
+                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                      id: '10373213520004',
+                      node: document.getElementById('product-component-1782608357635-h'),
+                      moneyFormat: '%24%7B%7Bamount%7D%7D',
+                      options: {
+                "product": {
+                  "iframe": false,
+                  "contents": { "img": false, "title": false, "price": false, "options": false, "quantity": false, "button": true },
+                  "styles": {
+                    "product": { "margin-bottom": "0px", "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0px", "margin-bottom": "0px" } },
+                    "button": {
+                      "font-family": "'Jost', sans-serif", "font-weight": "500", "font-size": "0.72rem", "letter-spacing": "0.22em", "text-transform": "uppercase",
+                      "padding-top": "16px", "padding-bottom": "16px", "padding-left": "32px", "padding-right": "32px",
+                      "border": "1px solid #000000", "border-radius": "0px", "width": "100%", "color": "#000000", "background-color": "transparent",
+                      ":hover": { "background-color": "transparent", "color": "#000000" }, ":focus": { "background-color": "transparent" }
+                    }
+                  },
+                  "text": { "button": "Add to cart" },
+                  "googleFonts": [ "Jost" ]
+                },
+                "productSet": { "styles": { "products": { "@media (min-width: 601px)": { "margin-left": "-20px" } } } },
+                "modalProduct": {
+                  "contents": { "img": false, "imgWithCarousel": true, "button": false, "buttonWithQuantity": true },
+                  "styles": {
+                    "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0px", "margin-bottom": "0px" } },
+                    "button": { "font-family": "'Jost', sans-serif", "letter-spacing": "0.22em", "text-transform": "uppercase", "border-radius": "0px", ":hover": { "background-color": "#000000" }, "background-color": "#000000", ":focus": { "background-color": "#000000" } }
+                  },
+                  "text": { "button": "Add to cart" }
+                },
+                "option": {},
+                "cart": {
+                  "styles": { "button": { "font-family": "'Jost', sans-serif", "letter-spacing": "0.22em", "text-transform": "uppercase", "border-radius": "0px", ":hover": { "background-color": "#000000" }, "background-color": "#000000", ":focus": { "background-color": "#000000" } } },
+                  "text": { "total": "Subtotal", "button": "Checkout" }
+                },
+                "toggle": { "styles": { "toggle": { "font-family": "'Jost', sans-serif", "background-color": "#000000", ":hover": { "background-color": "#000000" }, ":focus": { "background-color": "#000000" } } } }
+              },
+                    });
+                  });
+                }
+              })();
+              /*]]>*/
+              </script>
+            </div>
           </div>
         </article>
 
@@ -175,7 +234,6 @@
             <img class="product-card__media-primary" src="images/products/rs02-1.jpg" loading="lazy" decoding="async"
                  alt="RS02 luxury false lashes, natural and seamless">
             <img class="product-card__media-hover" src="images/products/rs02-2.jpg" loading="lazy" decoding="async" alt="" aria-hidden="true">
-            <span class="product-card__badge">Shop launching soon</span>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__name">RS02</h3>
@@ -184,7 +242,72 @@
               <span class="product-card__price" data-price>$10.00</span>
               <span class="product-card__note">AUD</span>
             </div>
-            <button class="btn btn--block is-disabled" type="button" aria-disabled="true" data-buy-button>Shop launching soon</button>
+            <!-- Shopify Buy Button: RS02 -->
+            <div class="product-card__buy">
+              <div id='product-component-1782609566225-h'></div>
+              <script type="text/javascript">
+              /*<![CDATA[*/
+              (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                  if (window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); }
+                } else { loadScript(); }
+                function loadScript() {
+                  var script = document.createElement('script');
+                  script.async = true;
+                  script.src = scriptURL;
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                  script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                  var client = ShopifyBuy.buildClient({
+                    domain: 'gfcib0-3p.myshopify.com',
+                    storefrontAccessToken: '2daaccd4cece3b8cc4d909af717c4bfa',
+                  });
+                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                      id: '10373214240900',
+                      node: document.getElementById('product-component-1782609566225-h'),
+                      moneyFormat: '%24%7B%7Bamount%7D%7D',
+                      options: {
+                "product": {
+                  "iframe": false,
+                  "contents": { "img": false, "title": false, "price": false, "options": false, "quantity": false, "button": true },
+                  "styles": {
+                    "product": { "margin-bottom": "0px", "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0px", "margin-bottom": "0px" } },
+                    "button": {
+                      "font-family": "'Jost', sans-serif", "font-weight": "500", "font-size": "0.72rem", "letter-spacing": "0.22em", "text-transform": "uppercase",
+                      "padding-top": "16px", "padding-bottom": "16px", "padding-left": "32px", "padding-right": "32px",
+                      "border": "1px solid #000000", "border-radius": "0px", "width": "100%", "color": "#000000", "background-color": "transparent",
+                      ":hover": { "background-color": "transparent", "color": "#000000" }, ":focus": { "background-color": "transparent" }
+                    }
+                  },
+                  "text": { "button": "Add to cart" },
+                  "googleFonts": [ "Jost" ]
+                },
+                "productSet": { "styles": { "products": { "@media (min-width: 601px)": { "margin-left": "-20px" } } } },
+                "modalProduct": {
+                  "contents": { "img": false, "imgWithCarousel": true, "button": false, "buttonWithQuantity": true },
+                  "styles": {
+                    "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0px", "margin-bottom": "0px" } },
+                    "button": { "font-family": "'Jost', sans-serif", "letter-spacing": "0.22em", "text-transform": "uppercase", "border-radius": "0px", ":hover": { "background-color": "#000000" }, "background-color": "#000000", ":focus": { "background-color": "#000000" } }
+                  },
+                  "text": { "button": "Add to cart" }
+                },
+                "option": {},
+                "cart": {
+                  "styles": { "button": { "font-family": "'Jost', sans-serif", "letter-spacing": "0.22em", "text-transform": "uppercase", "border-radius": "0px", ":hover": { "background-color": "#000000" }, "background-color": "#000000", ":focus": { "background-color": "#000000" } } },
+                  "text": { "total": "Subtotal", "button": "Checkout" }
+                },
+                "toggle": { "styles": { "toggle": { "font-family": "'Jost', sans-serif", "background-color": "#000000", ":hover": { "background-color": "#000000" }, ":focus": { "background-color": "#000000" } } } }
+              },
+                    });
+                  });
+                }
+              })();
+              /*]]>*/
+              </script>
+            </div>
           </div>
         </article>
 
@@ -193,7 +316,6 @@
             <img class="product-card__media-primary" src="images/products/rs04-1.jpg" loading="lazy" decoding="async"
                  alt="RS04 luxury false lashes, textured and full">
             <img class="product-card__media-hover" src="images/products/rs04-2.png" loading="lazy" decoding="async" alt="" aria-hidden="true">
-            <span class="product-card__badge">Shop launching soon</span>
           </div>
           <div class="product-card__body">
             <h3 class="product-card__name">RS04</h3>
@@ -202,7 +324,72 @@
               <span class="product-card__price" data-price>$15.00</span>
               <span class="product-card__note">AUD</span>
             </div>
-            <button class="btn btn--block is-disabled" type="button" aria-disabled="true" data-buy-button>Shop launching soon</button>
+            <!-- Shopify Buy Button: RS04 -->
+            <div class="product-card__buy">
+              <div id='product-component-1782610261644-h'></div>
+              <script type="text/javascript">
+              /*<![CDATA[*/
+              (function () {
+                var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+                if (window.ShopifyBuy) {
+                  if (window.ShopifyBuy.UI) { ShopifyBuyInit(); } else { loadScript(); }
+                } else { loadScript(); }
+                function loadScript() {
+                  var script = document.createElement('script');
+                  script.async = true;
+                  script.src = scriptURL;
+                  (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+                  script.onload = ShopifyBuyInit;
+                }
+                function ShopifyBuyInit() {
+                  var client = ShopifyBuy.buildClient({
+                    domain: 'gfcib0-3p.myshopify.com',
+                    storefrontAccessToken: '2daaccd4cece3b8cc4d909af717c4bfa',
+                  });
+                  ShopifyBuy.UI.onReady(client).then(function (ui) {
+                    ui.createComponent('product', {
+                      id: '10373215682692',
+                      node: document.getElementById('product-component-1782610261644-h'),
+                      moneyFormat: '%24%7B%7Bamount%7D%7D',
+                      options: {
+                "product": {
+                  "iframe": false,
+                  "contents": { "img": false, "title": false, "price": false, "options": false, "quantity": false, "button": true },
+                  "styles": {
+                    "product": { "margin-bottom": "0px", "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0px", "margin-bottom": "0px" } },
+                    "button": {
+                      "font-family": "'Jost', sans-serif", "font-weight": "500", "font-size": "0.72rem", "letter-spacing": "0.22em", "text-transform": "uppercase",
+                      "padding-top": "16px", "padding-bottom": "16px", "padding-left": "32px", "padding-right": "32px",
+                      "border": "1px solid #000000", "border-radius": "0px", "width": "100%", "color": "#000000", "background-color": "transparent",
+                      ":hover": { "background-color": "transparent", "color": "#000000" }, ":focus": { "background-color": "transparent" }
+                    }
+                  },
+                  "text": { "button": "Add to cart" },
+                  "googleFonts": [ "Jost" ]
+                },
+                "productSet": { "styles": { "products": { "@media (min-width: 601px)": { "margin-left": "-20px" } } } },
+                "modalProduct": {
+                  "contents": { "img": false, "imgWithCarousel": true, "button": false, "buttonWithQuantity": true },
+                  "styles": {
+                    "product": { "@media (min-width: 601px)": { "max-width": "100%", "margin-left": "0px", "margin-bottom": "0px" } },
+                    "button": { "font-family": "'Jost', sans-serif", "letter-spacing": "0.22em", "text-transform": "uppercase", "border-radius": "0px", ":hover": { "background-color": "#000000" }, "background-color": "#000000", ":focus": { "background-color": "#000000" } }
+                  },
+                  "text": { "button": "Add to cart" }
+                },
+                "option": {},
+                "cart": {
+                  "styles": { "button": { "font-family": "'Jost', sans-serif", "letter-spacing": "0.22em", "text-transform": "uppercase", "border-radius": "0px", ":hover": { "background-color": "#000000" }, "background-color": "#000000", ":focus": { "background-color": "#000000" } } },
+                  "text": { "total": "Subtotal", "button": "Checkout" }
+                },
+                "toggle": { "styles": { "toggle": { "font-family": "'Jost', sans-serif", "background-color": "#000000", ":hover": { "background-color": "#000000" }, ":focus": { "background-color": "#000000" } } } }
+              },
+                    });
+                  });
+                }
+              })();
+              /*]]>*/
+              </script>
+            </div>
           </div>
         </article>
       </div>
@@ -212,9 +399,35 @@
   <!-- ===================== TESTIMONIALS ===================== -->
   <section class="section section--paper">
     <div class="container">
-      <div class="testimonial reveal" data-testimonials>
-        <p class="testimonial__quote">“Silvia has an incredible eye for detail. She did not just do my makeup; she created an experience that made me feel like the most refined version of myself.”</p>
-        <cite class="testimonial__cite">Isabella M.</cite>
+      <div class="text-center mb-6 reveal">
+        <p class="eyebrow">Kind words</p>
+        <h2 class="headline mt-2">Loved by our clients</h2>
+      </div>
+      <div class="testimonial-wall reveal">
+        <figure class="testimonial-card">
+          <blockquote class="testimonial-card__quote">“I honestly can't recommend you enough! Your attention to detail on each face is amazing and you always know exactly what works for me. Not to mention, you're like the ONLY artist I've been to who can work around my extremely teary eye due to past surgery, which makes such a difference for me. I NEVER have to stress when I'm in your chair. You're so talented and I always leave absolutely adoring my makeup look every single time!”</blockquote>
+          <figcaption class="testimonial-card__name">Badiah E.</figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote class="testimonial-card__quote">“I've never had my makeup done by anyone else but RS Artistry and honestly, I don't regret it at all. She does makeup with so much grace, precision, and attention to detail. Her work is absolutely amazing, and her customer service is truly top tier. She treats her clients like friends and always makes you feel comfortable and cared for. Every makeup look I've ever asked for has been executed beautifully and exceeded my expectations. I genuinely wouldn't trust anyone else with my face but her.”</blockquote>
+          <figcaption class="testimonial-card__name">Eunice N.</figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote class="testimonial-card__quote">“Thank you for the makeup, I loved it so much. I got so many compliments on it and it lasted me all day!”</blockquote>
+          <figcaption class="testimonial-card__name">Samira M.</figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote class="testimonial-card__quote">“This is by far the best makeup I've ever had. You completely exceeded my expectations. You made me feel so beautiful, confident, and truly seen. I walked out not just glowing on the outside but feeling radiant within too. Your attention to detail, your professionalism, and your kind spirit made the whole experience unforgettable. You really have a gift. I'm so grateful I got to be on the receiving end of it. Can't wait to book you again. You're a gem!”</blockquote>
+          <figcaption class="testimonial-card__name">Evon M.</figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote class="testimonial-card__quote">“Where do I begin. LOVE HER WORK. I can't ever get my makeup done elsewhere anymore because no one compares. She is the absolute best in the makeup industry. She takes her time working with you rather than working on you and results are always on point.”</blockquote>
+          <figcaption class="testimonial-card__name">Iman E.</figcaption>
+        </figure>
+        <figure class="testimonial-card">
+          <blockquote class="testimonial-card__quote">“I've been going to her for years, and no one makes me feel as confident and comfortable as she does. Every appointment feels like catching up with a bestie while getting glammed up. The funny thing is, every single time she does my makeup, I end up saying, 'wait, this is my favourite look you've ever done!' Somehow she keeps outdoing herself every single time. She's the kind of makeup artist you want to gatekeep so she's always available for you, but at the same time, her talent is too good not to share with the world. Truly one of a kind, and I couldn't recommend her more.”</blockquote>
+          <figcaption class="testimonial-card__name">Amani M.</figcaption>
+        </figure>
       </div>
     </div>
   </section>

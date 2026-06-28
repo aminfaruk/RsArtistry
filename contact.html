@@ -51,37 +51,13 @@
   <section class="section--tight">
     <div class="container grid12">
 
-      <!-- Enquiry form -->
-      <div class="col-6 start-2 reveal" style="background-color:var(--paper); padding:var(--space-5)">
-        <h2 class="eyebrow mb-5">Enquiry form</h2>
-        <form class="stack-lg" action="#" method="post" novalidate>
-          <div class="field">
-            <label for="name">Full name</label>
-            <input id="name" name="name" type="text" placeholder="Enter your name" autocomplete="name" required>
-          </div>
-          <div class="field">
-            <label for="email">Email address</label>
-            <input id="email" name="email" type="email" placeholder="Enter your email" autocomplete="email" required>
-          </div>
-          <div class="field">
-            <label for="subject">Subject</label>
-            <select id="subject" name="subject">
-              <option>Bridal enquiry</option>
-              <option>Glam (soft / full)</option>
-              <option>Editorial glam</option>
-              <option>Makeup artistry course</option>
-              <option>Lash collection</option>
-              <option>Other</option>
-            </select>
-          </div>
-          <div class="field">
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" placeholder="How can we help you?"></textarea>
-          </div>
-          <div>
-            <button class="btn btn--solid" type="submit">Send message</button>
-          </div>
-        </form>
+      <!-- Booking -->
+      <div class="col-6 start-2 reveal stack" style="background-color:var(--paper); padding:var(--space-6) var(--space-5)">
+        <p class="eyebrow">Appointments</p>
+        <h2 class="headline">Book your appointment</h2>
+        <p class="lead muted">All appointments are made through our online scheduler. Choose your service and a time that suits you, and your confirmation will arrive by email.</p>
+        <p class="body-lg muted">Planning a wedding, an editorial shoot or a group booking of four or more? Reach out by email and we will take care of the details.</p>
+        <a class="btn btn--solid" href="book.html">Open the booking calendar</a>
       </div>
 
       <!-- Details -->
@@ -94,16 +70,24 @@
           </address>
         </div>
         <div>
-          <h2 class="eyebrow mb-3">Hours</h2>
+          <h2 class="eyebrow mb-3">Studio hours</h2>
           <ul class="stack-sm">
-            <li class="price-row"><span>Wed to Sun</span><span>9am to 5pm</span></li>
-            <li class="price-row muted"><span>Mon to Tue</span><span>Closed</span></li>
+            <li class="price-row muted"><span>Monday</span><span>Closed</span></li>
+            <li class="price-row muted"><span>Tuesday</span><span>Closed</span></li>
+            <li class="price-row"><span>Wednesday</span><span>9:00am to 5:00pm</span></li>
+            <li class="price-row"><span>Thursday</span><span>9:00am to 5:00pm</span></li>
+            <li class="price-row"><span>Friday</span><span>9:00am to 5:00pm</span></li>
+            <li class="price-row"><span>Saturday</span><span>9:00am to 5:00pm</span></li>
+            <li class="price-row"><span>Sunday</span><span>9:00am to 5:00pm</span></li>
+          </ul>
+          <ul class="stack-sm" style="margin-top:var(--space-3)">
+            <li class="footer-meta">Please enquire for any early morning bookings.</li>
+            <li class="footer-meta">Travel group booking enquiries via email only.</li>
           </ul>
         </div>
         <div>
           <h2 class="eyebrow mb-3">Quick links</h2>
           <ul class="stack-sm">
-            <li><a class="link-line" style="border:0; padding:0" href="https://instagram.com/rsartistry" target="_blank" rel="noopener">Instagram</a></li>
             <li><a class="link-line" style="border:0; padding:0" href="mailto:info@rsartistry.com">Email the studio</a></li>
             <li><a class="link-line" style="border:0; padding:0" href="book.html">Book a session</a></li>
           </ul>
@@ -113,13 +97,74 @@
     </div>
   </section>
 
+  <!-- ===================== BOOKING POLICIES ===================== -->
+  <section class="section--tight">
+    <div class="container grid12">
+      <div class="col-10 start-2 reveal">
+        <div class="mb-6">
+          <p class="eyebrow mb-2">Before you book</p>
+          <h2 class="headline">Booking policies</h2>
+        </div>
+
+        <div class="policies">
+
+          <details class="policy">
+            <summary>Appointment Times and Lateness Policy<span class="policy__icon" aria-hidden="true"></span></summary>
+            <div class="policy__body">
+              <p>To ensure a smooth experience for all clients, we kindly ask that you arrive on time for your scheduled appointment. Please allow sufficient time for travel, parking, and any unforeseen delays.</p>
+              <p>Due to ongoing scheduling disruptions caused by late arrivals, a lateness policy is now in place:</p>
+              <ul class="policy__list">
+                <li>Clients arriving more than 10 minutes late will incur a $10 late fee.</li>
+                <li>Clients arriving more than 15 minutes late will have their appointment automatically cancelled.</li>
+                <li>Late arrivals may impact the quality and duration of your service and affect subsequent bookings.</li>
+              </ul>
+              <p>While we always aim to accommodate our clients where possible, we ask that our time is respected in the same way we respect yours. Your punctuality allows us to provide the highest standard of service to every client.</p>
+            </div>
+          </details>
+
+          <details class="policy">
+            <summary>No-Show Policy<span class="policy__icon" aria-hidden="true"></span></summary>
+            <div class="policy__body">
+              <p>At RS Artistry, appointment times are reserved exclusively for each client. We value your time and ask that the same consideration is extended to ours.</p>
+              <p>A no-show occurs when a client fails to attend their scheduled appointment without any prior notice or communication.</p>
+              <ul class="policy__list">
+                <li>If you are unable to attend your appointment, we ask that you notify us as soon as possible.</li>
+                <li>Clients who fail to attend their appointment without any communication will forfeit their deposit.</li>
+                <li>Repeated last-minute cancellations or no-shows may result in future booking requests being declined.</li>
+                <li>Any client who is a no-show and does not make any attempt to contact RS Artistry before or after their appointment may be permanently restricted from making future bookings.</li>
+              </ul>
+              <p>Running a small business means that missed appointments directly impact our schedule and prevent other clients from securing available booking times. We appreciate your understanding and cooperation in helping us provide the best experience for all clients.</p>
+            </div>
+          </details>
+
+          <details class="policy">
+            <summary>Deposits and Appointment Confirmation<span class="policy__icon" aria-hidden="true"></span></summary>
+            <div class="policy__body">
+              <p>A non-refundable booking fee is required to secure all appointments. This fee will be deducted from your final service total and is not an additional charge.</p>
+              <ul class="policy__list">
+                <li>All deposits are strictly non-refundable.</li>
+                <li>Deposits will only be refunded if the makeup artist is required to cancel your appointment due to unforeseen circumstances.</li>
+                <li>Appointments are not confirmed until a deposit has been received and payment confirmation has been provided.</li>
+                <li>Once payment has been made via bank transfer, please send through your payment receipt so your appointment can be officially confirmed.</li>
+                <li>If a deposit has not been paid, your appointment time will not be reserved and no booking exists.</li>
+              </ul>
+              <p>By securing an appointment with RS Artistry, you acknowledge and agree to these terms and conditions.</p>
+            </div>
+          </details>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- ===================== MAP ===================== -->
   <section class="section--tight">
     <div class="container grid12">
       <div class="col-10 start-2 reveal">
         <div class="map-frame">
-          <img src="images/placeholder-wide-21x9.svg" data-img="studio-map.jpg" loading="lazy" decoding="async"
-               alt="Map showing the RS Artistry studio in Bankstown, Sydney">
+          <iframe src="https://www.google.com/maps?q=Bankstown+NSW+2200&output=embed"
+                  title="Map of RS Artistry, Bankstown, Sydney" loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"></iframe>
           <div class="map-pin">
             <div class="map-pin__chip">
               <p class="eyebrow">RS Artistry Studio</p>
