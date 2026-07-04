@@ -762,7 +762,6 @@ a.footer-link:hover { color: var(--ink); }
 }
 .hero__slide.is-active {
   opacity: 1;
-  animation: heroZoom 9s var(--ease-soft) both;
 }
 .hero__media::after {
   content: "";
@@ -1237,7 +1236,7 @@ a.footer-link:hover { color: var(--ink); }
 .breakout img {
   display: block;
   width: 100%;
-  height: clamp(360px, 60vh, 716px);
+  height: clamp(460px, 82vh, 900px);
   object-fit: cover;
 }
 .breakout__note {
@@ -1617,11 +1616,6 @@ a.footer-link:hover { color: var(--ink); }
 /* ==========================================================================
    10. ANIMATIONS
    ========================================================================== */
-@keyframes heroZoom {
-  from { transform: scale(1); }
-  to   { transform: scale(1.08); }
-}
-
 @keyframes marquee {
   from { transform: translateX(0); }
   to   { transform: translateX(-50%); }
