@@ -38,8 +38,8 @@
   --overlay: rgba(0, 0, 0, 0.28);
 
   /* Type families */
-  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --font-body: "Jost", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Raleway", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Raleway", "Helvetica Neue", Arial, sans-serif;
 
   /* Spacing scale (8px base) */
   --space-1: 8px;
@@ -133,7 +133,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .headline {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 300;
   font-size: clamp(2rem, 4vw, 2.75rem);
   line-height: 1.15;
   color: var(--ink);
@@ -141,7 +141,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .subhead {
   font-family: var(--font-display);
-  font-weight: 400;
+  font-weight: 300;
   font-size: clamp(1.4rem, 2.2vw, 1.65rem);
   line-height: 1.2;
   color: var(--ink);
