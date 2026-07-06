@@ -1,0 +1,32 @@
+# Netlify configuration for RsArtistry (static site)
+# Mirrors the headers and caching defined in vercel.json.
+
+[build]
+  # Static site — no build step. Serve files from the repo root.
+  publish = "."
+  command = ""
+
+# Security headers applied to every response.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+
+# Cache images for 7 days.
+[[headers]]
+  for = "/images/*"
+  [headers.values]
+    Cache-Control = "public, max-age=604800"
+
+# Always revalidate CSS/JS so updates ship immediately.
+[[headers]]
+  for = "/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
