@@ -38,7 +38,7 @@
   --overlay: rgba(0, 0, 0, 0.28);
 
   /* Type families */
-  --font-display: "Raleway", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
   --font-body: "Raleway", "Helvetica Neue", Arial, sans-serif;
 
   /* Spacing scale (8px base) */
@@ -133,7 +133,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .headline {
   font-family: var(--font-display);
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(2rem, 4vw, 2.75rem);
   line-height: 1.15;
   color: var(--ink);
@@ -141,7 +141,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 
 .subhead {
   font-family: var(--font-display);
-  font-weight: 300;
+  font-weight: 400;
   font-size: clamp(1.4rem, 2.2vw, 1.65rem);
   line-height: 1.2;
   color: var(--ink);
@@ -1032,6 +1032,10 @@ a.footer-link:hover { color: var(--ink); }
   justify-content: center;
   text-align: center;
 }
+/* Slim banner variant (e.g. lashes page) */
+.mono-hero--slim { height: clamp(300px, 44vh, 420px); }
+.mono-hero--slim .mono-hero__title { font-size: clamp(2.25rem, 6vw, 3.4rem); }
+.mono-hero--slim .mono-hero__eyebrow { margin-bottom: var(--space-2); }
 .mono-hero__media { position: absolute; inset: 0; z-index: 0; }
 .mono-hero__media img { width: 100%; height: 100%; object-fit: cover; }
 .mono-hero__media::after {
