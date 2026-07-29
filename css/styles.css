@@ -340,16 +340,11 @@ ul { margin: 0; padding: 0; list-style: none; }
   display: block;
 }
 .brand-word {
-  font-family: var(--font-display);
-  font-weight: 400;
-  font-size: 1.5rem;
-  letter-spacing: -0.01em;
-  color: var(--ink);
+  /* Logo mark stands alone on every viewport */
+  display: none;
 }
 @media (max-width: 600px) {
-  /* On phones, show the mark alone so Book + menu stay in view */
   .brand-mark { height: 32px; }
-  .brand-word { display: none; }
 }
 
 .nav {
@@ -1081,6 +1076,18 @@ a.footer-link:hover { color: var(--ink); }
   font-size: 0.7rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
+}
+/* Top-anchored hero title — keeps text clear of a centred subject's face */
+.mono-hero--top { align-items: flex-start; }
+.mono-hero--top .mono-hero__inner {
+  padding-top: clamp(2rem, 8vh, 4.5rem);
+}
+.mono-hero--top .mono-hero__media::after {
+  background: linear-gradient(to bottom,
+    rgba(0, 0, 0, 0.5) 0%,
+    rgba(0, 0, 0, 0.22) 34%,
+    rgba(0, 0, 0, 0.14) 60%,
+    rgba(0, 0, 0, 0.14) 100%);
 }
 
 /* Series sections */
